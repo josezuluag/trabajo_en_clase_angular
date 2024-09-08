@@ -1,0 +1,13 @@
+/* Estilos generales del componente */
+h1 {
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+app-ejemplo1 {
+    display: block; /* Asegura que el componente hijo se comporte como un bloque */
+    margin: 0 auto; /* Centra horizontalmente el componente */
+    max-width: 500px; /* Limita el ancho máximo del componente */
+}
+
+

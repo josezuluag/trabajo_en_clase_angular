@@ -1,0 +1,19 @@
+<h1>{{ saludo }}</h1>
+
+<app-ejemplo1
+  [imagenDelPadre]="imagenActual"
+  (emisor)="onEmit($event)"
+>
+  <!-- Contenido proyectado para el contenido de la tarjeta -->
+  <div card-content>
+    <button (click)="enviarImagen(0)">imagen 1</button>
+    <button (click)="enviarImagen(1)">imagen 2</button>
+    <button (click)="enviarImagen(2)">imagen 3</button>
+    <button (click)="enviarImagen(3)">imagen 4</button>
+  </div>
+
+  <!-- Contenido proyectado para los botones de acción -->
+  <div card-actions>
+    <button mat-raised-button color="warn" routerLink="/">Salir del componente</button>
+  </div>
+</app-ejemplo1>

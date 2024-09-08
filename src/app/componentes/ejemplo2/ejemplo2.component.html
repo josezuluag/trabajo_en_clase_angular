@@ -1,0 +1,15 @@
+<h1>{{ saludo }}</h1>
+
+<div class="button-group">
+  <button class="image-button" (click)="enviarImagen(0)">imagen 1</button>
+  <button class="image-button" (click)="enviarImagen(1)">imagen 2</button>
+  <button class="image-button" (click)="enviarImagen(2)">imagen 3</button>
+  <button class="image-button" (click)="enviarImagen(3)">imagen 4</button>
+</div>
+
+<button mat-raised-button color="warn" routerLink="/" class="exit-button">Salir del componente</button>
+
+<app-ejemplo1
+  [imagenDelPadre]="imagenActual"
+  (emisor)="onEmit($event)"
+></app-ejemplo1>
